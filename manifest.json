@@ -3,9 +3,7 @@
   "version": "0.0.1",
   "manifest_version": 2,
   "description": "Office Hours helps you help others.",
-  "homepage_url": "https://github.com/office-hours/oh-chrome"
-
-  /* This sample uses firebaseio-demo.com but for production apps using a firebaseio.com Firebase, you won't need that. */
+  "homepage_url": "https://github.com/office-hours/oh-chrome",
   "content_security_policy": "script-src 'self' https://cdn.firebase.com https://*.firebaseio.com; object-src 'self'",
   "icons": {
     "16": "icons/icon16.png",
@@ -13,7 +11,7 @@
     "128": "icons/icon128.png"
   },
   "background": {
-    "page": "src/bg/background.html",
+    "page": "src/browser_action/browser_action.html",
     "persistent": true
   },
   "browser_action": {
