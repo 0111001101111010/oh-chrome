@@ -1,21 +1,29 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-	<meta charset="UTF-8">
-	<title>Office Hours </title>
-	<link rel="stylesheet" href="../styles/main.css">
-</head>
-<body>
 
+<head>
+  <meta charset="UTF-8">
+  <title>Office Hours</title>
+  <link rel="stylesheet" href="../styles/main.css">
+</head>
+
+<body>
+  <div id="mainPopup">
+    <h1>Firebase test!</h1>
+    <p>Clicks:<span id="contents"></span></p>
+		<div id="#questions"></div>
+		<div id="first-tweet"></div>
+  </div>
 </body>
-</html>
-<div id="mainPopup">
-<h1>Firebase test!</h1>
-<p>Clicks: <span id="contents"></span></p>
-</div>
+<script>window.twttr = (function (d, s, id) {
+	var t, js, fjs = d.getElementsByTagName(s)[0];
+	if (d.getElementById(id)) return;
+	js = d.createElement(s); js.id = id; js.src= "https://platform.twitter.com/widgets.js";
+	fjs.parentNode.insertBefore(js, fjs);
+	return window.twttr || (t = { _e: [], ready: function (f) { t._e.push(f) } });
+}(document, "script", "twitter-wjs"));</script>
 <script src="../libs/jquery-2.1.1.min.js"></script>
 <script type="text/javascript" src="https://cdn.firebase.com/v0/firebase.js"></script>
 <script src="browser_action.js"></script>
-
 
 </html>
