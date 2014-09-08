@@ -4,7 +4,7 @@
   "manifest_version": 2,
   "description": "Office Hours helps you help others.",
   "homepage_url": "https://github.com/office-hours/oh-chrome",
-  "content_security_policy": "script-src 'self' https://cdn.firebase.com https://*.firebaseio.com; object-src 'self'",
+  "content_security_policy": "script-src 'self' https://cdn.firebase.com  https://*.firebaseio.com unsafe-inline; object-src 'self'",
   "icons": {
     "16": "icons/icon16.png",
     "48": "icons/icon48.png",
